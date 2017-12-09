@@ -1,0 +1,147 @@
+.card1 {
+    left:50%;
+    margin-left:-13em;
+    z-index:10;
+    transform: rotateZ(-3deg);
+    -moz-transform: rotateZ(-3deg);
+    -webkit-transform: rotateZ(-3deg);
+    transition: all 0.5s ease-out 0.3s;
+}
+.card2 {
+    left:50%;
+    margin-left:-12em;
+    z-index:9;
+    transition: all 0.5s ease-out 0.15s;
+}
+.card3 {
+    left:50%;
+    margin-left:-11em;
+    z-index:8;
+    transform: rotateZ(3deg);
+    -webkit-transform: rotateZ(3deg); 
+    -moz-transform: rotateZ(3deg); 
+    transition: all 0.5s ease-out;
+}
+
+.start .card {
+    left:-100%;
+    opacity:0;
+    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+}
+
+body {
+    background: #666 url(https://s.cdpn.io/44759/Wood-Backgrounds-Picture.jpg) no-repeat top center;
+    font-family: Georgia;
+    font-size:0.75em;
+    line-height:1.5em;
+}
+
+h1 { 
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+.card-container {
+    position:relative;
+    width: 18em;
+    margin:4em auto;
+}
+
+.card {
+    position:absolute;
+    top:0;
+    background: #fff;
+    box-shadow: 1px 1px 7px rgba(0,0,0,.65);
+    border-radius:0em;
+    padding:2em;
+    width:20em;
+    max-width:20em;
+    -webkit-backface-visibility: hidden;
+}
+
+.card a {
+    margin:0em -2em;
+    display:block;
+    width:120%;
+    max-width:24em;
+    position:relative;
+    line-height:1em;
+}
+
+.card a:after {
+    content: "";
+    position:absolute;
+    left:0;
+    right:0;
+    top:0px;
+    bottom:1px;
+    border-bottom:1px solid rgba(0,0,0,0.35);
+    border-top:1px solid rgba(0,0,0,0.15);
+}
+
+.card h1 {
+    margin-top:0;
+}
+
+.card p {
+    line-height:1.75em;
+    margin-bottom:0;
+}
+
+.card-container:hover,
+.card-container.hover {
+    .card {
+        opacity:0.9;
+        transform: scale(0.95);
+         -webkit-transform: scale(0.95);
+        margin-left:-12em;
+        &:hover,
+        &.hover {
+            opacity:1;   
+            z-index:11;
+                transform: scale(1);
+         -webkit-transform: scale(1);
+        }
+    }
+    .card1 {
+        transform: rotateZ(0deg) scale(0.95);
+        -webkit-transform: rotateZ(0deg) scale(0.95);
+    }
+    .card2 {
+        left:0%;  
+    }
+    .card3 {
+         left:100%;
+    }
+    
+}
+
+img { max-width:100% }
+
+@media (min-width:880px) {
+    body{
+        font-size:0.9em;
+    }
+    .card-container {
+        width: 24em;
+    }
+}
+
+@media (min-width:1075px) {
+    body{
+        font-size:1.1em;
+    }
+    .card-container {
+        width: 38em;
+    }
+}
+
+@media (max-height:550px) {
+    body{
+        font-size:0.8em;
+    }
+    .card-container {
+        width: 24em;
+    }
+}

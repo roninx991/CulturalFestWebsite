@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+#map{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    border: none;
+}
+.contacts{
+    padding: 5%;
+  	margin-top: 50px;
+    color: white;
+}
+
+#changeacc {
+    width: 100%;
+    margin: 0px;
+}
+@media all and (max-width: 768px){
+    #map{
+        width: 100%;
+        height: 68%;
+        padding: 5%;
+    }
+    .fa.fa-star{
+        display: none;
+    }
+}
+.head1{
+    color:white;        
+}
+.head1 h1{
+    font-family: 'Open Sans', sans-serif;
+    color: #dcbc34;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px 3px #666100, 3px 3px 6px 6px #313100;
+    font-size: 50px;
+    letter-spacing: 3px;   
+}
+.head1 p{
+    width: 80%;
+}
+.form1{
+    width: 400px;
+    height: 580px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    padding: 20px 30px;
+    margin-top: 50px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family:'Montserrat',sans-serif;
+    position: relative;
+}
+#college-logo h2{
+    margin: 5px 0 0 0;
+    padding-bottom: 10px;
+    width: 250px;
+    color: #78788c;
+    border-bottom: 3px solid #78788c;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat',sans-serif;
+    transition: all .3s;
+    border-bottom: 2px solid #bebed2;
+}
+input:focus{
+    border-bottom: 2px solid #78788c;
+}
+p:before{  
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0 0;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+button{
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0 0;
+    font-family: 'Montserrat',sans-serif;
+    border: 2px solid #78788c;
+    background:0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s;
+}
+button:hover{
+    background:#78788c;color:#fff;
+}
+
+

@@ -1,0 +1,154 @@
+
+/* General/reset styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  color: #333;
+}
+
+.new-section {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 4em;
+  font-weight: 100;
+}
+
+/* .header1 styles */
+
+.header1 {
+  position: relative;
+  text-align: center;
+  height: 500px;
+  background-image: url(../../Data/images/Events/Dance.jpg);
+  color: #fff;
+}
+
+.header1 h1 {
+  padding-top: -webkit-calc(50vh - 113px);
+  padding-top: expression(50vh - 113px);
+  padding-top: -moz-calc(50vh - 113px);
+  padding-top: -o-calc(50vh - 113px);
+  padding-top: calc(50vh - 113px);
+  font-size: 7em;
+  font-weight: 100;
+}
+
+.header1 h2 {
+  font-size: 2em;
+}
+
+.header1 span.animated {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 50px;
+  height: 4px;
+  width: 4px;
+  border-radius: 2px;
+  background: #fff;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+.header1 span::before,
+.header1 span::after {
+  position: absolute;
+  top: -23px;
+  content: "";
+  height: 30px;
+  width: 4px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.header1 span::before {
+  left: -10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform:    rotate(-45deg);
+  -ms-transform:     rotate(-45deg);
+  -o-transform:      rotate(-45deg);
+  transform:         rotate(-45deg);
+}
+
+.header1 span::after {
+  right: -10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  transform:         rotate(45deg);
+}
+
+/* Scroll animations styles */
+
+.scroll-animations {
+  display: flex;
+}
+
+.scroll-animations div {
+  flex-grow: 1;
+  padding: 30px;
+  text-align: center;
+  opacity: 0;
+  color: #333;
+}
+
+.scroll-animations div span {
+  font-size: 4em;
+  color: #5AA9E0;
+}
+
+.scroll-animations div h3 {
+  font-size: 1.9em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 759px) {
+  .header1 h1 {
+    font-size: 5em;
+  }
+  
+  .new-section {
+    font-size: 3em;
+  }
+  
+  .scroll-animations {
+    display: block;
+  }
+  
+  .scroll-animations div {
+    padding: 20px 80px;
+  }
+  
+  .click-animations input,
+  .click-animations textarea,
+  .click-animations button {
+    width: 80%;
+  }
+}
+
+@media (max-width: 475px) {
+  .new-section {
+    font-size: 2.5em;
+  } 
+  
+  .header1 h1 {
+    font-size: 3.2em;
+  }
+  
+  .header1 h2,
+  .funky-animations h3 {
+    font-size: 1.5em;
+  }
+  
+}
