@@ -11,6 +11,8 @@ body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 .new-section {
@@ -98,7 +100,26 @@ body {
   position: relative;
   top: 100px;
 }
+#ca{
+  position: relative;
+  top: 30px;
+}
+@media all and (max-width:768px){
+  #ca{
+    top:100px;
+  }
+  #ca h1{
+    font-size: 200%;
+  }
+ 
+}
+#ca-content{
 
+}
+
+#ca-content i{
+  color: white;
+}
 /* Scroll animations styles */
 
 .scroll-animations {
