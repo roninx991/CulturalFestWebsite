@@ -25,8 +25,6 @@ body {
 .header1 {
   position: relative;
   text-align: center;
-  height: 500px;
-  background-image: url(../../Data/images/Events/Dance.jpg);
   color: #fff;
 }
 
@@ -85,6 +83,20 @@ body {
   -ms-transform:     rotate(45deg);
   -o-transform:      rotate(45deg);
   transform:         rotate(45deg);
+}
+
+#hero{
+  background-color: transparent;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+  position: relative;
+  color: white;
+  height: 100%;
+}
+#hero-content{
+  position: relative;
+  top: 100px;
 }
 
 /* Scroll animations styles */
