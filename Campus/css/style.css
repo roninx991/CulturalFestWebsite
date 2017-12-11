@@ -88,6 +88,7 @@ body {
 }
 
 #hero{
+  background-attachment: fixed;
   background-color: transparent;  
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,6 +100,11 @@ body {
 #hero-content{
   position: relative;
   top: 100px;
+}
+#hero-content p{
+  width: 50%;
+  line-height: 25px;
+  font-size: 125%;
 }
 #ca{
   position: relative;
