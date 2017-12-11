@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: arial, sans-serif;
   overflow-x: hidden;
   color: #333;
   margin: 0;
@@ -104,8 +104,9 @@ body {
 #hero-content p{
   width: 50%;
   line-height: 25px;
-  font-size: 125%;
+  font-size: 150%;
 }
+
 #ca{
   position: relative;
   top: 30px;
@@ -125,6 +126,13 @@ body {
 
 #ca-content i{
   color: white;
+}
+#tnc{
+  margin: 0;
+  margin-left: 7%;
+}
+#tnc ol{
+  line-height: 30px;  
 }
 /* Scroll animations styles */
 
