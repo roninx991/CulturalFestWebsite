@@ -120,8 +120,9 @@ body {
   }
  
 }
-#ca-content{
+#ca-content img{
 
+  margin-top:10%;
 }
 
 #ca-content i{
@@ -130,6 +131,7 @@ body {
 #tnc{
   margin: 0;
   margin-left: 7%;
+  top:25px;
 }
 #tnc ol{
   line-height: 30px;  
