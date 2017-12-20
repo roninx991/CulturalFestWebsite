@@ -188,6 +188,7 @@ body {
   .overlay ul {
     list-style: none;
     padding: 0;
+      font-size: 70%;
     margin: 0 auto;
     display: inline-block;
     position: relative;
@@ -195,9 +196,9 @@ body {
   }
   .overlay ul li {
     display: block;
-    height: 25%;
-    height: calc(100% / 5);
-    min-height: 50px;
+    height: 14%;
+    height: calc(100% / 7);
+    min-height: 40px;
     position: relative;
     opacity: 0;
   }
@@ -207,6 +208,7 @@ body {
     color: #FFF;
     text-decoration: none;
     overflow: hidden;
+    
   }
   .overlay ul li a:hover:after,
   .overlay ul li a:focus:after,

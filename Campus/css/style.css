@@ -102,18 +102,35 @@ body {
   top: 100px;
 }
 #hero-content p{
-  width: 50%;
+  width: 80%;
   line-height: 25px;
   font-size: 150%;
 }
 
+.Register{
+    background-attachment: fixed;
+  background-color: transparent;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+  position: relative;
+  color: white;
+  height: 450px;
+
+}
+
+@media all and (max-width:768px){
+    .Register{
+        height:100%;
+    }
+}
 #ca{
   position: relative;
   top: 30px;
 }
 @media all and (max-width:768px){
   #ca{
-    top:100px;
+    top:50px;
   }
   #ca h1{
     font-size: 200%;
@@ -134,7 +151,7 @@ body {
   top:25px;
 }
 #tnc ol{
-  line-height: 30px;  
+  line-height: 50px;  
 }
 /* Scroll animations styles */
 
@@ -162,7 +179,16 @@ body {
 }
 
 
-@media (max-width: 759px) {
+@media (max-width: 768px) {
+    #hero h1{
+        font-size: 250%;    
+    }
+    #hero h3{
+        font-size: 120%;
+    }
+    #hero p{
+        font-size: 100%;
+    }
   .header1 h1 {
     font-size: 5em;
   }

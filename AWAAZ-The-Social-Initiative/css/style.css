@@ -5,8 +5,14 @@
     width: 100%;
     margin: 0px;
     height: 500px;
+    font-size:80%;
 }
 
+@media all and (max-width:768px){
+    #changeacc{
+        height: 100%;
+    }
+}
 #changeacc .aboutus{
     padding-top: 5%;
     padding-left:10%;
@@ -46,10 +52,6 @@ hr{
     position: relative;
 }
 .video iframe{
-/*
-    border: 20px solid white;
-    border-image: url(../../Data/AWAAZ/border.jpg) 100 round;   
-*/
     width:80%;
     height: 350px;
     margin: 10%;
@@ -104,7 +106,7 @@ hr{
     transition: all 0.5s ease-out;
 }
 .container-1 {
- width: 80%;
+  width: 80%;
   margin: 0 auto;
   height: auto;
   display: -webkit-box;
