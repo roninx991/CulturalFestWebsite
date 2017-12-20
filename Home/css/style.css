@@ -266,8 +266,8 @@ body.loaded {
   }
   .overlay ul li {
     display: block;
-    height: 25%;
-    height: calc(100% / 5);
+    height: 14%;
+    height: calc(100% / 7);
     min-height: 50px;
     position: relative;
     opacity: 0;
