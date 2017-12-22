@@ -81,7 +81,7 @@ body.loaded {
 }
 /*Desktop navigation*/
 
-@media screen and (min-width: 1081px) {
+@media screen and (min-width: 768px) {
   .mobile {
     display: none;
   }
@@ -103,13 +103,12 @@ body.loaded {
     
   header nav {
     float: right;
-    margin-right: 5%;
   }
   header nav a {
     top: 10px;
     position: relative;
     color: #a3a3a3;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     font-family: 'Lato', serif, sans-serif;
     text-decoration: none;
@@ -134,7 +133,7 @@ body.loaded {
 /*----------------------------------------------*/
 
 /*Mobile*/
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
   .desktop {
     display: none;
   }
@@ -152,6 +151,7 @@ body.loaded {
     -webkit-transition: all .5s;
     transition: all .5s ease;
     z-index: 999;
+      
   }
   header.resize {
     height: 50px;
@@ -250,7 +250,7 @@ body.loaded {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-size: 40px;
+    font-size: 20px;
     font-family: 'Lato', serif;
    
     letter-spacing: 2px;

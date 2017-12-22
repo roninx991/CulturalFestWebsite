@@ -11,7 +11,7 @@ body {
 
 /*Desktop navigation*/
 
-@media screen and (min-width: 1081px) {
+@media screen and (min-width: 768px) {
   .mobile {
     display: none;
   }
@@ -33,13 +33,12 @@ body {
     
   header nav {
     float: right;
-    margin-right: 5%;
   }
   header nav a {
     top: 10px;
     position: relative;
     color: #a3a3a3;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     font-family: 'Lato', serif, sans-serif;
     text-decoration: none;
@@ -63,7 +62,7 @@ body {
 /*----------------------------------------------*/
 
 /*Mobile*/
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
   .desktop {
     display: none;
   }
