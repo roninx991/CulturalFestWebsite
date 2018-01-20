@@ -9,6 +9,31 @@
     padding: 5%;
   	margin-top: 50px;
     color: white;
+    
+}
+.contact{
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 80%;
+}
+.head-content{
+    border-radius: 10px;
+    background-color: #655ADC;
+}
+.mobile-no{
+    color: black;
+}
+.mobile-no:hover{
+    color:red;
+    background-color: beige;
+}
+.email-address{
+    color:black;
+}
+.email-address:hover{
+    color:red;
+    border-radius: 10px;
+    background-color: beige;
 }
 
 #changeacc {

@@ -1,0 +1,88 @@
+$myFont: "Montserrat"
+@import url(https://fonts.googleapis.com/css?family=Montserrat)
+$fontColor1: #fff
+$fontColor2: #333
+$background1: whitesmoke
+$background2: steelblue
+@mixin wMax-hMax
+  width: 100%
+  height: 100%
+@mixin flexBasic
+  display: flex
+  position: relative
+
+p
+  margin: 0
+body
+  @include flexBasic
+  justify-content: center
+  align-items: center
+  width: 100vw
+  height: 100vh
+
+.contactCard
+  @include flexBasic
+  flex-direction: column
+  width: 400px
+  height: auto
+  border-radius: 4px
+  background: $background1
+  overflow: hidden
+  box-shadow: 0px 6px 12px -8px #aaa
+  
+  .nameContainer
+    @include flexBasic
+    justify-content: flex-start
+    align-items: center
+    width: 100%
+    height: 80px
+    background: $background2
+    font-family: $myFont
+    color: $fontColor1
+    cursor: default
+    
+    .line
+      @include flexBasic
+      justify-content: center
+      align-items: baseline
+      margin-left: 30px
+    
+      h20
+        font-size: 1.9em
+        padding-right: 1em
+      p
+        font-size: 1em
+      
+  .infoContainer
+    @include flexBasic
+    flex-direction: column
+    width: 100%
+    height: auto
+    
+    .line
+      @include flexBasic
+      justify-content: flex-start
+      align-items: center
+      width: 100%
+      height: 60px
+      font-family: $myFont
+      font-size: 1.1em
+      color: $fontColor2
+      
+      a
+        text-decoration: none
+        color: $fontColor2
+      
+      .icon
+        @include flexBasic
+        width: 1.2em
+        height: 1.2em
+        margin: 0 30px
+        
+        .icon-phone
+          fill: $fontColor2
+          
+        .icon-mail
+          fill: $fontColor2
+      
+    
