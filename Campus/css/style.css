@@ -95,7 +95,8 @@ body {
   background-position: center;  
   position: relative;
   color: white;
-  height: 100%;
+  min-height: 680px;
+    height:100%;
 }
 #hero-content{
   position: relative;
@@ -127,6 +128,7 @@ body {
 #ca{
   position: relative;
   top: 30px;
+    color:white;
 }
 @media all and (max-width:768px){
   #ca{
@@ -138,7 +140,9 @@ body {
  
 }
 #ca-content img{
-
+    
+    height:200px;
+    width:80%;
   margin-top:10%;
 }
 
@@ -147,7 +151,7 @@ body {
 }
 #tnc{
   margin: 0;
-  margin-left: 7%;
+    margin-left:7%;
   top:25px;
 }
 #tnc ol{
@@ -179,7 +183,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media all and(max-width: 768px) {
     #hero h1{
         font-size: 250%;    
     }
@@ -212,7 +216,7 @@ body {
   }
 }
 
-@media (max-width: 475px) {
+@media all and(max-width: 475px) {
   .new-section {
     font-size: 2.5em;
   } 

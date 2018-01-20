@@ -9,33 +9,52 @@
     padding: 5%;
   	margin-top: 50px;
     color: white;
-    
 }
 .contact{
     border-radius: 10px;
     background-color: aliceblue;
-    width: 80%;
+    width: 70%;
 }
 .head-content{
     border-radius: 10px;
-    background-color: #655ADC;
+    background-color: #dcbc34;
+}
+.head-content h1 {
+    font-size: 27px;
+    font-weight: bold;
+    padding: 10px;
 }
 .mobile-no{
+    padding: 10px 0 10px 0;
     color: black;
+    margin: 5px;
+    border-bottom: 1px solid #aaaaaa;
+    transition: 0.2s linear;
 }
 .mobile-no:hover{
-    color:red;
+    padding: 10px 0 10px 0;
+    color: red;
+    margin: 5px;
     background-color: beige;
+    transform: scale(1.05);
 }
 .email-address{
-    color:black;
+    padding: 10px 0 10px 0;
+    color: black;
+    margin: 5px;
+    transition: 0.2s linear;
+}
+.email-address.email-link{
+    font-size: 15px;
 }
 .email-address:hover{
-    color:red;
+    padding: 10px 0 10px 0;
+    color: red;
     border-radius: 10px;
+    margin: 5px;
     background-color: beige;
+    transform: scale(1.05);
 }
-
 #changeacc {
     width: 100%;
     margin: 0px;
@@ -48,6 +67,12 @@
     }
     .fa.fa-star{
         display: none;
+    }
+    .email-address.email-link{
+        font-size: 20px;
+    }
+    .contact{
+        width: 90%;
     }
 }
 .head1{
@@ -105,6 +130,12 @@ p:before{
     margin: 28px 0 0 0;
     font-size: 14px;
     color: #5a5a5a;
+}
+.btn {
+    background: #dcbc34;
+}
+.btn:hover{
+    background: #fc5555;
 }
 button{
     float: right;
