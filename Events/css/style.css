@@ -802,11 +802,11 @@
   border-color: #F9FBE7;
 }
 .material-card.Yellow h2 {
-  background-color: #FFEB3B;
+  background-color: #EEE03B;
 }
 .material-card.Yellow h2:after {
-  border-top-color: #FFEB3B;
-  border-right-color: #FFEB3B;
+  border-top-color: #EEE03B;
+  border-right-color: #EEE03B;
   border-bottom-color: transparent;
   border-left-color: transparent;
 }
@@ -818,8 +818,8 @@
 }
 .material-card.Yellow.mc-active h2:before {
   border-top-color: transparent;
-  border-right-color: #FFEB3B;
-  border-bottom-color: #FFEB3B;
+  border-right-color: #EEE03B;
+  border-bottom-color: #EEE03B;
   border-left-color: transparent;
 }
 .material-card.Yellow.mc-active h2:after {
@@ -829,7 +829,7 @@
   border-left-color: transparent;
 }
 .material-card.Yellow .mc-btn-action {
-  background-color: #FFEB3B;
+  background-color: #EEE03B;
 }
 .material-card.Yellow .mc-btn-action:hover {
   background-color: #F57F17;

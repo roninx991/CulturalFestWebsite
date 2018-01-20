@@ -81,7 +81,7 @@ body.loaded {
 }
 /*Desktop navigation*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1080px) {
   .mobile {
     display: none;
   }
@@ -133,7 +133,7 @@ body.loaded {
 /*----------------------------------------------*/
 
 /*Mobile*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   .desktop {
     display: none;
   }

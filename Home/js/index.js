@@ -93,15 +93,3 @@ jQuery(document).ready(function($) {
 
 
 
-function slideSlider(){
-  $("#slider-scroller").css({"left":"0%","transition":"all 0s linear"});
-  $("#slider-scroller").css({"left": String(parseInt($("#slider-scroller").css("left"))-800) + "px","transition":"all 5s linear"});
-  setTimeout(function(){moveSliderItem()}, 1600);
-}
-
-function moveSliderItem(){
-  $("#slider-scroller div").first().detach().appendTo($("#slider-scroller"));
-  slideSlider();
-}
-
-slideSlider();
