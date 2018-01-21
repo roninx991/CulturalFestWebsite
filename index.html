@@ -16,20 +16,53 @@
         <link rel="stylesheet" href="Home/css/style.css">
         <link rel="stylesheet" href="Home/css/sponsors.css">
         <link rel="stylesheet" href="Home/css/loader.css">
-<<<<<<< HEAD
-        <link rel="stylesheet" href="Regular/css/modal-home.css">
-=======
->>>>>>> b16db8aa18e9b9dc85017193ed89424f35004e12
-        <link rel="stylesheet" href="dist/bootstrap-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="dist/MDB-dist/css/mdb-compiled.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="dist/MDB-dist/css/mdb-compiled.min.css">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <style type="text/css">
             @import url(https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700);
             #footer{
                 position: relative;
                 margin: -100px 0 0 0;
             }
-      
+
+
+.container1 {
+  color: #333;
+    position:relative;
+  text-align: center;
+    width:95%;;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+  font-weight:bold;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+ 
+  text-transform: uppercase;
+    color:white;
+}
+
+li span {
+  display: block;
+  font-size:4.5em;
+    padding: 0;margin:0;
+}
+@media all and (max-width:768px){
+ 
+li span {
+  display: block;
+  font-size:1.5em;
+}   
+}
         </style>
 
   
@@ -132,19 +165,37 @@
   <!--Mouse scroller-->
   <span class="mouseScroll"></span>
 
-  <!--About section-->
-  <div class="about">
-
+<div class="row" style="margin:0;padding:0;">  <!--About section-->
+  <div class="about col-md-6 col-sm-6 col-lg-6 col-xs-12" style="border:2px solid white;">
     <div class = "hideme">
       <h1>About Us.</h1>
+
+        <div id = "mission">
+        <p class="animatable fadeIn">Manzar is the annual cultural festival of the Institute of Chemical technology. It has completed 10 years since it first began in 2007, and 2016 saw the 10th edition of this festival. Every year, Manzar proudly hosts a variety of events in music, dance, literary arts and fine arts.</p>
+        <p class="animatable fadeIn">The Dance and Fashion Show events are the most popular, with active participation of students from all over the city.</p>
+
     </div>
 
     <div>
-      <div id = "mission" data-aos="fade-up">
-        <p>Manzar is the annual cultural festival of the Institute of Chemical technology. It has completed 10 years since it first began in 2007, and 2016 saw the 10th edition of this festival. Every year, Manzar proudly hosts a variety of events in music, dance, literary arts and fine arts.</p>
-        <p>The Dance and Fashion Show events are the most popular, with active participation of students from all over the city.</p>
-      </div>
-    </div>    
+     
+    </div>  
+    </div>  
+<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12" style="margin: 0;padding: 0;border:2px solid white;" >
+   
+<div class="container1"><br>
+  <h1 id="head">TIME TO HIT</h1>
+  <ul class="row" style="margin: 0;padding: 0;">
+    <li class="col-md-6 col-xs-3 col-sm-6 col-lg-6"><span id="days"></span>days</li>
+    <li class="col-md-6 col-xs-3 col-sm-6 col-lg-6"><span id="hours"></span>Hours</li>
+    <li class="col-md-6 col-xs-3 col-sm-6 col-lg-6"><span id="minutes"></span>Minutes</li>
+    <li class="col-md-6 col-xs-3 col-sm-6 col-lg-6"><span id="seconds"></span>Seconds</li>
+  </ul>
+</div>
+    </div>
+   
+    
+</div>
+
 
   <div class = "sponsors">
     <div class = "row" style = 'padding: 15px 0 40px 0;'>
@@ -158,7 +209,7 @@
       <center><a href="AWAAZ-The-Social-Initiative/"><button id="myBtn" class="btn-lg btn-danger" style = 'cursor:pointer; background-color: #df3521; padding-bottom: 10px;'>Know more!</button></a></center>
       <br>
     </div>
-    </div>
+    
     
         <footer id = "footer" class = "page-footer center-on-small-only fixed" style = "background-color:#0B0C13" >
 
@@ -224,14 +275,39 @@
           document.getElementById("manzar-loading").style.display="none";
       }
   </script>
+
+    <script>
+    const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+let countDown = new Date('Feb 1, 2018 09:00:00').getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('days').innerHTML = Math.floor(distance / (day)),
+        document.getElementById('hours').innerHTML = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerHTML = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerHTML = Math.floor((distance % (minute)) / second);
+      
+      //do something later when date is reached
+//      if (distance < 0) {
+//        clearInterval(x);
+//        MANZAR IS HERE!;
+//      }
+
+    }, second)
+                         </script>    
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src='https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js'></script>
+
     <script src = "Home/js/index.js"></script>
-<<<<<<< HEAD
+
     
-=======
-   
->>>>>>> b16db8aa18e9b9dc85017193ed89424f35004e12
+
    
 </body>
 </html>
